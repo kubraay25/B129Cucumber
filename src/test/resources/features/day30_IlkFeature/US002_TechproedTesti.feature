@@ -6,3 +6,12 @@ Feature: US002_TechproEducation_Testi
     And arama_kutusunda_QA_aratir
     And sayfa_basliginin_QA_icerdigini_test_eder
     And sayfayi_kapatir
+
+
+
+  git init
+  git add README.md
+  git commit -m "first commit"
+  git branch -M main
+  git remote add origin https://github.com/kubraay25/B129Cucumber.git
+  git push -u origin main

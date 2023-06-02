@@ -17,6 +17,7 @@ public class AmazonStepsDefinitions {
     public void kullanici_amazon_sayfasina_gider() {
 
         Driver.getDriver().get(ConfigReader.getProperty("amazon_Url"));
+        //bu methodla amazona gitti
     }
     @And("arama_kutusunda_iphone_aratir")
     public void arama_kutusunda_iphone_aratir() {

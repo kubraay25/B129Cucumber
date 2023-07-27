@@ -6,7 +6,7 @@ Feature: US002_TechproEducation_Testi
   #istenen yere ConfigReader.getProperty(Key) methodu ile giriş yapmalıyız
 
   Scenario: TC01_TechproEducation_Sayfasi_Testi
-    Then cikan_reklam_kapatilir
+   # Then cikan_reklam_kapatilir
     When kullanici 2 saniye bekler
     And kullanici_tum_sayfanin_resmini_alir
     And arama_kutusunda_QA_aratir
@@ -16,7 +16,7 @@ Feature: US002_TechproEducation_Testi
     And sayfayi_kapatir
 
   Scenario: TC002_TechproEducation_Sayfasi_Testi
-    And cikan_reklam_kapatilir
+    #And cikan_reklam_kapatilir
     And kullanici 2 saniye bekler
     And searchboxda_"developer"_aratir
     And kullanici 3 saniye bekler

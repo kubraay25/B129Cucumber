@@ -10,10 +10,10 @@ public class TechproPage {
         PageFactory.initElements(Driver.getDriver(),this);
     }
 
-    @FindBy(xpath = "//*[@class='eicon-close']")
-    public WebElement reklam;
+//    @FindBy(xpath = "//*[@class='eicon-close']")
+//    public WebElement reklam;
 
-    @FindBy(css = "input[type='search']")
+    @FindBy(xpath = "//input[@id='searchHeaderInput']")
     public WebElement searchBox;
 
 }

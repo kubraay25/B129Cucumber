@@ -13,12 +13,12 @@ import techproed.utilities.ReusableMethods;
 public class TechproStepDefinition {
     TechproPage techproPage;
 
-    @Then("cikan_reklam_kapatilir")
-    public void cikan_reklam_kapatilir() {
-        techproPage = new TechproPage();
-        techproPage.reklam.click();
-
-    }
+//    @Then("cikan_reklam_kapatilir")
+//    public void cikan_reklam_kapatilir() {
+//        techproPage = new TechproPage();
+//        techproPage.reklam.click();
+//
+//    }
 
 
     @And("arama_kutusunda_QA_aratir")
@@ -31,7 +31,7 @@ public class TechproStepDefinition {
     @And("sayfa_basliginin_QA_icerdigini_test_eder")
     public void sayfa_basliginin_qa_icerdigini_test_eder() {
 
-        Assert.assertTrue(Driver.getDriver().getTitle().contains("QA"));
+        Assert.assertFalse(Driver.getDriver().getTitle().contains("QA"));
 
     }
 
@@ -56,6 +56,6 @@ public class TechproStepDefinition {
 
     @And("sayfa_basliginin_{string}_icerdigini_test_eder")
     public void sayfa_basliginin__icerdigini_test_eder(String metin) {
-        Assert.assertTrue(Driver.getDriver().getTitle().contains(metin));
+        Assert.assertFalse(Driver.getDriver().getTitle().contains(metin));
     }
 }

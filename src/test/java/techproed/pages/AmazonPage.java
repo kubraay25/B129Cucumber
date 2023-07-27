@@ -10,5 +10,6 @@ public class AmazonPage {
         PageFactory.initElements(Driver.getDriver(),this);
     }
     @FindBy(id = "twotabsearchtextbox")
-    public WebElement aramaKutusu;
+    public WebElement aramaKutusu; //arama kutusu adında bir nesne tanımlıyorum
+
 }

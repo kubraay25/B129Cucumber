@@ -1,5 +1,6 @@
 package techproed.stepDefinitions;
 
+
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
@@ -43,7 +44,7 @@ public class AmazonStepsDefinitions {
     @And("arama_kutusunda_Java_aratir")
     public void arama_kutusunda_java_aratir() {
         amazonPage =new AmazonPage();
-        amazonPage.aramaKutusu.sendKeys("java",Keys.ENTER);
+        amazonPage.aramaKutusu.sendKeys("ava",Keys.ENTER);
 
     }
 
